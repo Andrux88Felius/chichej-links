@@ -3,214 +3,501 @@
 <head>
   <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="CHICHEJ - Sistema Inteligente de Dispensación Automatizada de Chicha mediante Aplicación Móvil e Internet de las Cosas (IoT).">
 
   <title>CHICHEJ | Enlaces oficiales</title>
 
+  <!-- ICONOS FONT AWESOME -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
   <style>
+
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
       min-height: 100vh;
       font-family: Arial, Helvetica, sans-serif;
+
       background:
-        linear-gradient(
-          145deg,
-          #082f4f 0%,
-          #34124f 45%,
-          #611e72 100%
+        radial-gradient(
+          circle at top,
+          #392270 0%,
+          #151137 35%,
+          #08091b 70%,
+          #05050d 100%
         );
+
       color: white;
       display: flex;
       justify-content: center;
-      padding: 35px 18px;
+      align-items: center;
+
+      padding: 30px 15px;
     }
 
-    .container {
+    .contenedor {
       width: 100%;
-      max-width: 430px;
+      max-width: 520px;
+
       text-align: center;
     }
 
+    /* LOGO */
+
     .logo {
-      width: 145px;
-      height: 145px;
-      object-fit: contain;
+      width: 175px;
+      max-width: 55%;
       margin-bottom: 10px;
+
+      filter:
+        drop-shadow(0 0 12px rgba(106, 73, 255, 0.45));
     }
 
     h1 {
-      font-size: 38px;
+      font-size: 42px;
+      letter-spacing: 3px;
       margin-bottom: 5px;
+
+      background:
+        linear-gradient(
+          90deg,
+          #ffffff,
+          #9c7cff,
+          #2cd5dc
+        );
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
-    .slogan {
-      color: #f1b943;
-      font-size: 17px;
-      font-style: italic;
-      margin-bottom: 20px;
-    }
+    .subtitulo {
+      max-width: 440px;
+      margin: 0 auto 12px;
 
-    .description {
-      font-size: 15px;
+      color: #d9d6eb;
+      font-size: 14px;
       line-height: 1.5;
-      opacity: 0.9;
-      margin-bottom: 28px;
     }
 
-    .button {
+    .expo {
+      display: inline-block;
+
+      background:
+        linear-gradient(
+          90deg,
+          #7515a5,
+          #4a27b4
+        );
+
+      border-radius: 20px;
+
+      padding: 8px 18px;
+
+      margin: 6px 0 25px;
+
+      font-weight: bold;
+      font-size: 13px;
+
+      box-shadow:
+        0 6px 20px rgba(94, 49, 190, 0.35);
+    }
+
+    /* BOTONES */
+
+    .enlaces {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+
+    .boton {
+      position: relative;
+
       display: flex;
       align-items: center;
-      gap: 15px;
 
-      width: 100%;
-      min-height: 68px;
+      min-height: 64px;
 
-      margin-bottom: 15px;
-      padding: 13px 20px;
+      padding: 10px 18px;
 
-      background: white;
-      color: #242424;
+      border-radius: 16px;
 
       text-decoration: none;
+      color: white;
 
-      border-radius: 18px;
+      background:
+        rgba(255,255,255,0.075);
+
+      border:
+        1px solid rgba(255,255,255,0.15);
+
+      backdrop-filter: blur(10px);
 
       box-shadow:
-        0 8px 25px rgba(0,0,0,0.20);
+        0 8px 30px rgba(0,0,0,0.2);
 
       transition:
-        transform 0.2s,
-        box-shadow 0.2s;
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
     }
 
-    .button:hover {
+    .boton:hover {
       transform: translateY(-3px);
-      box-shadow:
-        0 12px 28px rgba(0,0,0,0.28);
+
+      background:
+        rgba(255,255,255,0.13);
+
+      border-color:
+        rgba(255,255,255,0.3);
     }
 
-    .icon {
-      width: 43px;
-      height: 43px;
+    .icono {
+      width: 46px;
+      height: 46px;
+
+      flex-shrink: 0;
+
+      border-radius: 13px;
 
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
 
-      border-radius: 12px;
+      margin-right: 15px;
 
       font-size: 25px;
-
-      background: #f2f2f2;
     }
 
-    .button-text {
+    .texto {
       text-align: left;
+      flex-grow: 1;
     }
 
-    .button-text strong {
+    .texto strong {
       display: block;
-      font-size: 17px;
+      font-size: 16px;
+      margin-bottom: 3px;
     }
 
-    .button-text small {
-      color: #666;
-      font-size: 13px;
+    .texto span {
+      display: block;
+      font-size: 12px;
+      color: #bcb8d0;
     }
+
+    .flecha {
+      font-size: 16px;
+      opacity: 0.6;
+    }
+
+    /* COLORES DE ICONOS */
+
+    .facebook .icono {
+      background: #1877f2;
+    }
+
+    .tiktok .icono {
+      background: #111111;
+    }
+
+    .instagram .icono {
+      background:
+        linear-gradient(
+          135deg,
+          #833ab4,
+          #fd1d1d,
+          #fcb045
+        );
+    }
+
+    .whatsapp .icono {
+      background: #25d366;
+    }
+
+    .pdf .icono {
+      background:
+        linear-gradient(
+          135deg,
+          #e63946,
+          #a51220
+        );
+    }
+
+    /* BOTÓN TRÍPTICO DESTACADO */
+
+    .pdf {
+      margin-top: 8px;
+
+      border:
+        1px solid rgba(255, 100, 120, 0.45);
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(157,20,46,0.24),
+          rgba(82,35,150,0.24)
+        );
+    }
+
+    .nuevo {
+      background: #e63946;
+
+      padding: 3px 7px;
+      border-radius: 8px;
+
+      font-size: 9px;
+      font-weight: bold;
+
+      margin-left: 5px;
+    }
+
+    /* PIE */
 
     footer {
-      margin-top: 30px;
-      font-size: 12px;
-      opacity: 0.75;
+      margin-top: 28px;
+
+      padding-top: 18px;
+
+      border-top:
+        1px solid rgba(255,255,255,0.10);
+
+      color: #aaa6bd;
+
+      font-size: 11px;
+      line-height: 1.7;
     }
+
+    footer strong {
+      color: white;
+    }
+
+    .frase {
+      color: #9273ff;
+
+      font-weight: bold;
+
+      margin-top: 7px;
+    }
+
+
+    /* CELULARES PEQUEÑOS */
+
+    @media (max-width: 400px) {
+
+      h1 {
+        font-size: 35px;
+      }
+
+      .boton {
+        min-height: 60px;
+      }
+
+      .logo {
+        width: 145px;
+      }
+    }
+
   </style>
 </head>
 
+
 <body>
 
-  <main class="container">
+  <main class="contenedor">
 
-    <img
-      class="logo"
-      src="logo-chichej.png"
-      alt="Logo CHICHEJ"
-    >
+    <!--
+      IMPORTANTE:
+      Si luego quieres añadir tu logo como archivo,
+      súbelo con el nombre logo-chichej.png.
+
+      Después descomenta esta línea:
+
+      <img src="logo-chichej.png"
+           alt="Logo CHICHEJ"
+           class="logo">
+    -->
+
 
     <h1>CHICHEJ</h1>
 
-    <div class="slogan">
-      Tradición que te refresca
-    </div>
-
-    <p class="description">
-      Sistema Inteligente de Dispensación
-      Automatizada de Chicha mediante
-      Aplicación Móvil e Internet de las Cosas (IoT)
+    <p class="subtitulo">
+      Sistema Inteligente de Dispensación Automatizada
+      de Chicha mediante Aplicación Móvil e
+      Internet de las Cosas (IoT)
     </p>
 
-    <a
-      class="button"
-      href="https://www.instagram.com/chichejwinapu"
-      target="_blank"
-    >
-      <span class="icon">📸</span>
+    <div class="expo">
+      13va. Expo Feria Chelito Quiroga 2026
+    </div>
 
-      <span class="button-text">
-        <strong>Instagram</strong>
-        <small>@chichejwinapu</small>
-      </span>
-    </a>
 
-    <a
-      class="button"
-      href="https://www.tiktok.com/@chichej.wiapu"
-      target="_blank"
-    >
-      <span class="icon">🎵</span>
+    <section class="enlaces">
 
-      <span class="button-text">
-        <strong>TikTok</strong>
-        <small>@chichej.wiapu</small>
-      </span>
-    </a>
 
-    <a
-      class="button"
-      href="https://www.facebook.com/share/19654KdARH/"
-      target="_blank"
-    >
-      <span class="icon">🔵</span>
+      <!-- FACEBOOK -->
 
-      <span class="button-text">
-        <strong>Facebook</strong>
-        <small>ChiChej Wiñapu</small>
-      </span>
-    </a>
+      <!--
+        Cuando tengamos tu enlace exacto de Facebook,
+        reemplazaremos # por tu enlace.
+      -->
 
-    <a
-      class="button"
-      href="https://wa.me/message/ZN2DYB6JSE26H1"
-      target="_blank"
-    >
-      <span class="icon">💬</span>
+      <a
+        class="boton facebook"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
 
-      <span class="button-text">
-        <strong>WhatsApp</strong>
-        <small>Contáctanos</small>
-      </span>
-    </a>
+        <div class="icono">
+          <i class="fa-brands fa-facebook-f"></i>
+        </div>
+
+        <div class="texto">
+          <strong>Facebook</strong>
+          <span>CHICHEJ</span>
+        </div>
+
+        <i class="fa-solid fa-chevron-right flecha"></i>
+
+      </a>
+
+
+      <!-- TIKTOK -->
+
+      <a
+        class="boton tiktok"
+        href="https://www.tiktok.com/@chichej.wiapu"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <div class="icono">
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+
+        <div class="texto">
+          <strong>TikTok</strong>
+          <span>@chichej.wiapu</span>
+        </div>
+
+        <i class="fa-solid fa-chevron-right flecha"></i>
+
+      </a>
+
+
+      <!-- INSTAGRAM -->
+
+      <!--
+        Cuando tengamos tu enlace exacto de Instagram,
+        reemplazaremos # por tu enlace.
+      -->
+
+      <a
+        class="boton instagram"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <div class="icono">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+
+        <div class="texto">
+          <strong>Instagram</strong>
+          <span>CHICHEJ</span>
+        </div>
+
+        <i class="fa-solid fa-chevron-right flecha"></i>
+
+      </a>
+
+
+      <!-- WHATSAPP -->
+
+      <a
+        class="boton whatsapp"
+        href="https://wa.me/59177271557"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <div class="icono">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+
+        <div class="texto">
+          <strong>WhatsApp</strong>
+          <span>Contacta con CHICHEJ</span>
+        </div>
+
+        <i class="fa-solid fa-chevron-right flecha"></i>
+
+      </a>
+
+
+      <!-- TRÍPTICO PDF -->
+
+      <a
+        class="boton pdf"
+        href="triptico-chichej.pdf"
+        target="_blank"
+      >
+
+        <div class="icono">
+          <i class="fa-solid fa-file-pdf"></i>
+        </div>
+
+        <div class="texto">
+
+          <strong>
+            Tríptico digital
+            <span class="nuevo">PDF</span>
+          </strong>
+
+          <span>
+            Ver o descargar información del proyecto
+          </span>
+
+        </div>
+
+        <i class="fa-solid fa-download flecha"></i>
+
+      </a>
+
+
+    </section>
+
 
     <footer>
-      CHICHEJ © 2026<br>
-      Tecnología que conecta tradición e innovación
+
+      <strong>
+        Instituto Tecnológico
+        “Marcelo Quiroga Santa Cruz”
+      </strong>
+
+      <br>
+
+      Carrera de Sistemas Informáticos
+
+      <br>
+
+      Eduardo Jordy Zeballos Garcia
+
+      <p class="frase">
+        Tradición boliviana conectada con tecnología
+      </p>
+
     </footer>
 
   </main>
