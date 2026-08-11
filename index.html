@@ -11,9 +11,11 @@
 
   <title>CHICHEJ | Enlaces oficiales</title>
 
-  <!-- ICONOS FONT AWESOME -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- ICONOS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  >
 
   <style>
 
@@ -25,192 +27,251 @@
 
     body {
       min-height: 100vh;
-      font-family: Arial, Helvetica, sans-serif;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
 
       background:
         radial-gradient(
           circle at top,
-          #392270 0%,
-          #151137 35%,
-          #08091b 70%,
+          #40247a 0%,
+          #17123b 35%,
+          #090a1c 70%,
           #05050d 100%
         );
 
       color: white;
+
       display: flex;
       justify-content: center;
-      align-items: center;
 
       padding: 30px 15px;
     }
 
     .contenedor {
+
       width: 100%;
       max-width: 520px;
 
       text-align: center;
     }
 
-    /* LOGO */
-
-    .logo {
-      width: 175px;
-      max-width: 55%;
-      margin-bottom: 10px;
-
-      filter:
-        drop-shadow(0 0 12px rgba(106, 73, 255, 0.45));
-    }
+    /* ============================= */
+    /* ENCABEZADO                    */
+    /* ============================= */
 
     h1 {
-      font-size: 42px;
-      letter-spacing: 3px;
-      margin-bottom: 5px;
+
+      font-size: 43px;
+      letter-spacing: 4px;
+
+      margin-top: 15px;
+      margin-bottom: 8px;
 
       background:
         linear-gradient(
           90deg,
           #ffffff,
-          #9c7cff,
-          #2cd5dc
+          #a884ff,
+          #2cd6dd
         );
 
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      background-clip: text;
     }
 
     .subtitulo {
-      max-width: 440px;
-      margin: 0 auto 12px;
 
-      color: #d9d6eb;
+      max-width: 450px;
+
+      margin:
+        0 auto
+        15px;
+
+      color: #dedbea;
+
       font-size: 14px;
-      line-height: 1.5;
+
+      line-height: 1.55;
     }
 
     .expo {
+
       display: inline-block;
+
+      padding:
+        9px
+        20px;
+
+      margin-bottom: 27px;
+
+      border-radius: 24px;
 
       background:
         linear-gradient(
           90deg,
-          #7515a5,
-          #4a27b4
+          #7717a6,
+          #4c29b9
         );
 
-      border-radius: 20px;
-
-      padding: 8px 18px;
-
-      margin: 6px 0 25px;
-
-      font-weight: bold;
       font-size: 13px;
+      font-weight: bold;
 
       box-shadow:
-        0 6px 20px rgba(94, 49, 190, 0.35);
+        0 8px 25px
+        rgba(
+          102,
+          60,
+          220,
+          0.35
+        );
     }
 
-    /* BOTONES */
+    /* ============================= */
+    /* BOTONES                       */
+    /* ============================= */
 
     .enlaces {
+
       display: flex;
+
       flex-direction: column;
+
       gap: 13px;
     }
 
     .boton {
-      position: relative;
 
       display: flex;
       align-items: center;
 
-      min-height: 64px;
+      width: 100%;
 
-      padding: 10px 18px;
+      min-height: 66px;
 
-      border-radius: 16px;
+      padding:
+        10px
+        18px;
+
+      border-radius: 17px;
 
       text-decoration: none;
+
       color: white;
 
       background:
-        rgba(255,255,255,0.075);
+        rgba(
+          255,
+          255,
+          255,
+          0.075
+        );
 
       border:
-        1px solid rgba(255,255,255,0.15);
+        1px solid
+        rgba(
+          255,
+          255,
+          255,
+          0.15
+        );
 
-      backdrop-filter: blur(10px);
+      backdrop-filter:
+        blur(10px);
 
       box-shadow:
-        0 8px 30px rgba(0,0,0,0.2);
+        0 8px 25px
+        rgba(
+          0,
+          0,
+          0,
+          0.20
+        );
 
       transition:
         transform 0.2s ease,
         background 0.2s ease,
-        border-color 0.2s ease;
+        border 0.2s ease;
     }
 
     .boton:hover {
-      transform: translateY(-3px);
+
+      transform:
+        translateY(-3px);
 
       background:
-        rgba(255,255,255,0.13);
+        rgba(
+          255,
+          255,
+          255,
+          0.13
+        );
 
       border-color:
-        rgba(255,255,255,0.3);
+        rgba(
+          255,
+          255,
+          255,
+          0.30
+        );
     }
 
+    .boton:active {
+
+      transform:
+        scale(0.98);
+    }
+
+    /* ============================= */
+    /* ICONOS                        */
+    /* ============================= */
+
     .icono {
-      width: 46px;
-      height: 46px;
+
+      width: 47px;
+      height: 47px;
 
       flex-shrink: 0;
 
-      border-radius: 13px;
+      border-radius: 14px;
 
       display: flex;
-      justify-content: center;
+
       align-items: center;
+      justify-content: center;
 
       margin-right: 15px;
 
       font-size: 25px;
     }
 
-    .texto {
-      text-align: left;
-      flex-grow: 1;
-    }
-
-    .texto strong {
-      display: block;
-      font-size: 16px;
-      margin-bottom: 3px;
-    }
-
-    .texto span {
-      display: block;
-      font-size: 12px;
-      color: #bcb8d0;
-    }
-
-    .flecha {
-      font-size: 16px;
-      opacity: 0.6;
-    }
-
-    /* COLORES DE ICONOS */
-
     .facebook .icono {
-      background: #1877f2;
+
+      background:
+        #1877f2;
     }
 
     .tiktok .icono {
-      background: #111111;
+
+      background:
+        #111111;
+
+      border:
+        1px solid
+        rgba(
+          255,
+          255,
+          255,
+          0.15
+        );
     }
 
     .instagram .icono {
+
       background:
         linear-gradient(
           135deg,
@@ -221,93 +282,185 @@
     }
 
     .whatsapp .icono {
-      background: #25d366;
+
+      background:
+        #25d366;
     }
 
     .pdf .icono {
+
       background:
         linear-gradient(
           135deg,
-          #e63946,
-          #a51220
+          #f04b55,
+          #a80e22
         );
     }
 
-    /* BOTÓN TRÍPTICO DESTACADO */
+    /* ============================= */
+    /* TEXTO DE BOTONES              */
+    /* ============================= */
+
+    .texto {
+
+      text-align: left;
+
+      flex-grow: 1;
+    }
+
+    .texto strong {
+
+      display: block;
+
+      margin-bottom: 3px;
+
+      font-size: 16px;
+    }
+
+    .texto span {
+
+      display: block;
+
+      color: #beb9d1;
+
+      font-size: 12px;
+    }
+
+    .flecha {
+
+      margin-left: 10px;
+
+      font-size: 16px;
+
+      opacity: 0.60;
+    }
+
+    /* ============================= */
+    /* PDF                           */
+    /* ============================= */
 
     .pdf {
-      margin-top: 8px;
+
+      margin-top: 9px;
 
       border:
-        1px solid rgba(255, 100, 120, 0.45);
+        1px solid
+        rgba(
+          255,
+          84,
+          105,
+          0.4
+        );
 
       background:
         linear-gradient(
           90deg,
-          rgba(157,20,46,0.24),
-          rgba(82,35,150,0.24)
+          rgba(
+            168,
+            22,
+            55,
+            0.25
+          ),
+          rgba(
+            80,
+            38,
+            154,
+            0.25
+          )
         );
     }
 
-    .nuevo {
-      background: #e63946;
+    .etiqueta-pdf {
 
-      padding: 3px 7px;
-      border-radius: 8px;
+      display: inline-block !important;
 
-      font-size: 9px;
+      margin-left: 6px;
+
+      padding:
+        3px
+        7px;
+
+      border-radius: 7px;
+
+      background:
+        #df263d;
+
+      color: white !important;
+
+      font-size: 9px !important;
+
       font-weight: bold;
-
-      margin-left: 5px;
     }
 
-    /* PIE */
+    /* ============================= */
+    /* PIE                           */
+    /* ============================= */
 
     footer {
-      margin-top: 28px;
 
-      padding-top: 18px;
+      margin-top: 30px;
+
+      padding-top: 20px;
 
       border-top:
-        1px solid rgba(255,255,255,0.10);
+        1px solid
+        rgba(
+          255,
+          255,
+          255,
+          0.11
+        );
 
-      color: #aaa6bd;
+      color: #aba6bf;
 
       font-size: 11px;
+
       line-height: 1.7;
     }
 
     footer strong {
+
       color: white;
     }
 
     .frase {
-      color: #9273ff;
+
+      margin-top: 8px;
+
+      color: #9a7aff;
 
       font-weight: bold;
-
-      margin-top: 7px;
     }
 
+    /* ============================= */
+    /* CELULARES                     */
+    /* ============================= */
 
-    /* CELULARES PEQUEÑOS */
-
-    @media (max-width: 400px) {
+    @media
+    (max-width: 400px) {
 
       h1 {
+
         font-size: 35px;
       }
 
       .boton {
-        min-height: 60px;
+
+        min-height: 61px;
       }
 
-      .logo {
-        width: 145px;
+      .icono {
+
+        width: 43px;
+        height: 43px;
+
+        font-size: 23px;
       }
+
     }
 
   </style>
+
 </head>
 
 
@@ -315,64 +468,71 @@
 
   <main class="contenedor">
 
-    <!--
-      IMPORTANTE:
-      Si luego quieres añadir tu logo como archivo,
-      súbelo con el nombre logo-chichej.png.
-
-      Después descomenta esta línea:
-
-      <img src="logo-chichej.png"
-           alt="Logo CHICHEJ"
-           class="logo">
-    -->
-
 
     <h1>CHICHEJ</h1>
 
+
     <p class="subtitulo">
+
       Sistema Inteligente de Dispensación Automatizada
       de Chicha mediante Aplicación Móvil e
       Internet de las Cosas (IoT)
+
     </p>
 
+
     <div class="expo">
+
       13va. Expo Feria Chelito Quiroga 2026
+
     </div>
 
 
     <section class="enlaces">
 
 
-      <!-- FACEBOOK -->
-
-      <!--
-        Cuando tengamos tu enlace exacto de Facebook,
-        reemplazaremos # por tu enlace.
-      -->
+      <!-- ================================= -->
+      <!-- FACEBOOK                          -->
+      <!-- ================================= -->
 
       <a
         class="boton facebook"
-        href="#"
+        href="https://www.facebook.com/search/top?q=chichej"
         target="_blank"
         rel="noopener noreferrer"
       >
 
         <div class="icono">
+
           <i class="fa-brands fa-facebook-f"></i>
+
         </div>
+
 
         <div class="texto">
-          <strong>Facebook</strong>
-          <span>CHICHEJ</span>
+
+          <strong>
+            Facebook
+          </strong>
+
+          <span>
+            CHICHEJ
+          </span>
+
         </div>
 
-        <i class="fa-solid fa-chevron-right flecha"></i>
+
+        <i
+          class="fa-solid fa-arrow-up-right-from-square flecha">
+        </i>
 
       </a>
 
 
-      <!-- TIKTOK -->
+
+      <!-- ================================= -->
+      <!-- TIKTOK                            -->
+      <!-- ================================= -->
 
       <a
         class="boton tiktok"
@@ -382,96 +542,155 @@
       >
 
         <div class="icono">
+
           <i class="fa-brands fa-tiktok"></i>
+
         </div>
 
-        <div class="texto">
-          <strong>TikTok</strong>
-          <span>@chichej.wiapu</span>
-        </div>
-
-        <i class="fa-solid fa-chevron-right flecha"></i>
-
-      </a>
-
-
-      <!-- INSTAGRAM -->
-
-      <!--
-        Cuando tengamos tu enlace exacto de Instagram,
-        reemplazaremos # por tu enlace.
-      -->
-
-      <a
-        class="boton instagram"
-        href="#"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-
-        <div class="icono">
-          <i class="fa-brands fa-instagram"></i>
-        </div>
-
-        <div class="texto">
-          <strong>Instagram</strong>
-          <span>CHICHEJ</span>
-        </div>
-
-        <i class="fa-solid fa-chevron-right flecha"></i>
-
-      </a>
-
-
-      <!-- WHATSAPP -->
-
-      <a
-        class="boton whatsapp"
-        href="https://wa.me/59177271557"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-
-        <div class="icono">
-          <i class="fa-brands fa-whatsapp"></i>
-        </div>
-
-        <div class="texto">
-          <strong>WhatsApp</strong>
-          <span>Contacta con CHICHEJ</span>
-        </div>
-
-        <i class="fa-solid fa-chevron-right flecha"></i>
-
-      </a>
-
-
-      <!-- TRÍPTICO PDF -->
-
-      <a
-        class="boton pdf"
-        href="triptico-chichej.pdf"
-        target="_blank"
-      >
-
-        <div class="icono">
-          <i class="fa-solid fa-file-pdf"></i>
-        </div>
 
         <div class="texto">
 
           <strong>
-            Tríptico digital
-            <span class="nuevo">PDF</span>
+            TikTok
           </strong>
 
           <span>
-            Ver o descargar información del proyecto
+            @chichej.wiapu
           </span>
 
         </div>
 
-        <i class="fa-solid fa-download flecha"></i>
+
+        <i
+          class="fa-solid fa-arrow-up-right-from-square flecha">
+        </i>
+
+      </a>
+
+
+
+      <!-- ================================= -->
+      <!-- INSTAGRAM                         -->
+      <!-- ================================= -->
+
+      <a
+        class="boton instagram"
+        href="https://www.instagram.com/chichej.wiapu/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <div class="icono">
+
+          <i class="fa-brands fa-instagram"></i>
+
+        </div>
+
+
+        <div class="texto">
+
+          <strong>
+            Instagram
+          </strong>
+
+          <span>
+            @chichej.wiapu
+          </span>
+
+        </div>
+
+
+        <i
+          class="fa-solid fa-arrow-up-right-from-square flecha">
+        </i>
+
+      </a>
+
+
+
+      <!-- ================================= -->
+      <!-- WHATSAPP                          -->
+      <!-- ================================= -->
+
+      <a
+        class="boton whatsapp"
+        href="https://wa.me/59177271557?text=Hola%20CHICHEJ%2C%20quisiera%20conocer%20m%C3%A1s%20sobre%20el%20proyecto."
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <div class="icono">
+
+          <i class="fa-brands fa-whatsapp"></i>
+
+        </div>
+
+
+        <div class="texto">
+
+          <strong>
+            WhatsApp
+          </strong>
+
+          <span>
+            Contactar con CHICHEJ
+          </span>
+
+        </div>
+
+
+        <i
+          class="fa-brands fa-whatsapp flecha">
+        </i>
+
+      </a>
+
+
+
+      <!-- ================================= -->
+      <!-- TRÍPTICO PDF                      -->
+      <!-- ================================= -->
+
+      <a
+        class="boton pdf"
+        href="./triptico-chichej.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <div class="icono">
+
+          <i class="fa-solid fa-file-pdf"></i>
+
+        </div>
+
+
+        <div class="texto">
+
+          <strong>
+
+            Tríptico digital
+
+            <span class="etiqueta-pdf">
+              PDF
+            </span>
+
+          </strong>
+
+
+          <span>
+
+            Ver o descargar información
+            del proyecto
+
+          </span>
+
+        </div>
+
+
+        <i
+          class="fa-solid fa-download flecha">
+        </i>
 
       </a>
 
@@ -481,24 +700,37 @@
 
     <footer>
 
+
       <strong>
+
         Instituto Tecnológico
         “Marcelo Quiroga Santa Cruz”
+
       </strong>
 
+
       <br>
+
 
       Carrera de Sistemas Informáticos
 
+
       <br>
+
 
       Eduardo Jordy Zeballos Garcia
 
+
       <p class="frase">
-        Tradición boliviana conectada con tecnología
+
+        Tradición boliviana conectada
+        con tecnología
+
       </p>
 
+
     </footer>
+
 
   </main>
 
